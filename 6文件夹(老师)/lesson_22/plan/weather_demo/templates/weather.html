@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天气预报</title>
+</head>
+<body>
+    <div style="text-align: center">
+        <form action="http://127.0.0.1:5000/">
+        <input type="text" name="city">
+        <input type="submit">
+    </form>
+    </div>
+    <section>
+        <div style="text-align: center">
+            <h3>城市：{{ h_city }}</h3>
+            <ul>
+                {% for i in weather_date %}
+                <li>日期：{{ i['date'] }}</li>
+                <li>温度：{{ i['temperature'] }}</li>
+                <li>天气：{{ i['weather'] }}</li>
+                <li>风向：{{ i['direct'] }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,13 @@
+**第一**
+    理解python是什么
+        app.py
+        这个里面是我的写的是python代码；
+        python是一个后盾代码； 处理数据
+**第二**
+    认识文件名：
+    static：
+        模板（装页面文件：字体样式，图片，JavaScript，css文件）
+    templates：
+        专门放置.html文件的地方
+        
+

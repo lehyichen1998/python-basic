@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>天气预报!!!!</h1>
+<h3>城市数据, {{city}}</h3>
+<!--<h4>天气数据, {{future}}</h4>-->
+<form action="http://127.0.0.1:5000/" method="get">
+    <input type="text" name="city_s">
+    <input type="submit" name="点击查询">
+</form>
+<section>
+    <ul>
+        {% for i in future %}
+        <li>日期，{{i['date']}}</li>
+        <li>温度，{{i['temperature']}}</li>
+        <li>天气，{{i['weather']}}</li>
+        <li>风向，{{i['direct']}}</li>
+        {% endfor %}
+    </ul>
+</section>
+</body>
+</html>

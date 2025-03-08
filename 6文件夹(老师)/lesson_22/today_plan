@@ -1,0 +1,98 @@
+# 通过api接口实现天气查询的案例;
+
+# statics : 模板需要的静态文件
+# templates : 存放html模板
+
+# 天气请求的路径: http://apis.juhe.cn/simpleWeather/query?key=1067ae868025e24d898fba6e5555b75b&city=%E9%95%BF%E6%B2%99  ;# %E9%95%BF%E6%B2%99 = 长沙
+# 秘钥 2 ：
+
+# 创建flask project;
+
+
+# api :响应的数据：
+    {
+        "reason":"查询成功!",
+        "result":{
+            "city":"长沙",
+            "realtime":{
+                "temperature":"15",
+                "humidity":"95",
+                "info":"小雨",
+                "wid":"07",
+                "direct":"西风",
+                "power":"3级",
+                "aqi":"83"
+            },
+            "future":[
+                {
+                    "date":"2021-04-14",    # 周一 -- 周天
+                    "temperature":"14/16℃",
+                    "weather":"中雨转小雨",
+                    "wid":{
+                        "day":"08",
+                        "night":"07"
+                    },
+                    "direct":"东风转西北风"
+                },
+                {
+                    "date":"2021-04-15",
+                    "temperature":"14/20℃",
+                    "weather":"阴转多云",
+                    "wid":{
+                        "day":"02",
+                        "night":"01"
+                    },
+                    "direct":"西北风转持续无风向"
+                },
+                {
+                    "date":"2021-04-16",
+                    "temperature":"14/22℃",
+                    "weather":"多云",
+                    "wid":{
+                        "day":"01",
+                        "night":"01"
+                    },
+                    "direct":"东北风"
+                },
+                {
+                    "date":"2021-04-17",
+                    "temperature":"14/23℃",
+                    "weather":"多云",
+                    "wid":{
+                        "day":"01",
+                        "night":"01"
+                    },
+                    "direct":"东北风"
+                },
+                {
+                    "date":"2021-04-18",
+                    "temperature":"14/23℃",
+                    "weather":"阴转小雨",
+                    "wid":{
+                        "day":"02",
+                        "night":"07"
+                    },
+                    "direct":"东北风"
+                }
+            ]
+        },
+        "error_code":0
+    }
+
+
+
+#######################################################################################################################
+
+# 渲染模板
+
+
+
+
+
+
+
+
+
+
+
+# 完善之前遗留下来的运势查询;

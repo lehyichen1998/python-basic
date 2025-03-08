@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>欢迎查询天气~</h1>
+    <h3>城市{{city}}</h3>
+<!--    <h4>天气数据：{{futrue}}</h4>-->
+    <form action="http://127.0.0.1:5000/" method="get">
+        <input type="text" name="city_s">
+        <input type="submit" value="点击查询！">
+    </form>
+<!--    section 显示数据    -->
+    <section>
+        <ul>
+            {% for i in futrue %}
+            <li>日期：{{ i['date'] }}</li>
+            <li>温度：{{ i['temperature'] }}</li>
+            <li>天气：{{ i['weather'] }}</li>
+            <li>风向：{{ i['direct'] }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{'id': '2', 'name': '小红', 'c': 60, 'python': 80, 'static': 90}
+{'id': '3', 'name': '33', 'c': 33, 'python': 33, 'static': 33}
+{'id': '6', 'name': '小黑', 'c': 30, 'python': 30, 'static': 30}
+{'id': '2', 'name': '2', 'c': 2, 'python': 2, 'static': 2}
+{'id': '6', 'name': '6', 'c': 6, 'python': 6, 'static': 6}
+{'id': '5', 'name': '5', 'c': 5, 'python': 5, 'static': 5}
+{'id': '4', 'name': '4', 'c': 4, 'python': 4, 'static': 4}
+{'id': '3', 'name': '33', 'c': 33, 'python': 33, 'static': 33}

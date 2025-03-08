@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>今日运势</title>
+</head>
+<body>
+<form action="http://127.0.0.1:5000/" method="get">
+    <div>
+        <h3>今日运势</h3>
+        <select name="consName">
+            <option value="天秤座 ">天秤座 </option>
+            <option value="双鱼座">双鱼座</option>
+            <option value="射手座">射手座</option>
+            <option value="摩羯座">摩羯座</option>
+            <option value="狮子座">狮子座</option>
+            <option value="处女座">处女座</option>
+            <option value="白羊座">白羊座</option>
+        </select>
+        <select name="types">
+            <option value="today">今天运势</option>
+            <option value="tomorrow">明天运势</option>
+            <option value="week">本周运势</option>
+            <option value="month">本月运势</option>
+        </select>
+        <input type="submit" value="开始检测">
+    </div>
+</form>
+<table style="border-spacing:1px">
+    <tr>
+        <td>星座名称:</td>
+        <td>{{name}}</td>
+    </tr>
+    <tr>
+        <td>幸运色:</td>
+        <td>{{color}}</td>
+    </tr>
+    <tr>
+        <td>当前时间:</td>
+        <td>{{datetime}}</td>
+    </tr>
+    <tr>
+        <td>显示结果:</td>
+        <td>{{summary}}</td>
+    </tr>
+</table>
+</body>
+</html>

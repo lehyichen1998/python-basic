@@ -1,0 +1,13 @@
+# 实现天气预报网站；
+
+# 官网登陆
+# https://www.juhe.cn/
+
+# 获取个人api接口
+# http://apis.juhe.cn/simpleWeather/query?key=1067ae868025e24d898fba6e5555b75b&city=%E9%95%BF%E6%B2%99
+
+# 拿到接口请求的数据
+# 处理数据：
+    将数据，返回到页面上
+    # 选择静态模板
+    # 完成

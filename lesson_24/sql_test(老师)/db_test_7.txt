@@ -1,0 +1,31 @@
+-- sql 练习;
+
+-- 向学生表中添加一条数据
+-- INSERT into student VALUES('09','大雄','1960-10-10','male');
+
+-- 删除用测试数据;
+-- DELETE FROM student WHERE s_name = '王菊';
+
+-- 更改大雄的出生日期;
+-- UPDATE student SET s_birth = '1990-10-10' WHERE s_id = '09'
+
+-- 查询学生表的所有信息 * 表示所有的学生信息;
+-- SELECT s.s_name As 学生姓名,s.s_sex as 学生性别 from student s;
+
+-- 查询老师表的所有信息;
+-- SELECT t.t_name,t.t_id FROM teacher as t;
+
+-- 课程表的信息;
+-- SELECT * FROM course;
+
+-- 统计学生表中的 男生有多少人
+-- SELECT COUNT(s.s_name) FROM student s WHERE s.s_sex = 'male';
+
+-- 模糊查询;
+-- 查询名字中含有'云'字的学生信息;
+
+-- 精准查询
+-- SELECT * FROM student WHERE s_name = '李云'
+
+-- 模糊查询;
+-- SELECT * from student where s_name LIKE '云%'
